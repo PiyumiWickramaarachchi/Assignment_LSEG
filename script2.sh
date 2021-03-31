@@ -1,21 +1,3 @@
-
-Need to copy key.pem file into /tmp/ admin server
-script2.sh put into /tmp/  admin server
-Then give the permission to script2.sh => chmod +x /tmp/script2.sh
-
-use web server public ip address insted of "18.206.160.195"
-use admin server public ip address insted of "54.175.169.61"
-use your own email insted of piyumiwickramaarachchi1@gmail.com
-
-For daily run this script2.sh 
-	echo "./script2.sh" > /etc/cron.daily/script2
-	chmod +x /etc/cron.daily/script2
-
-
-
-############################################
-vi script2.sh
-
 #!/bin/bash
 
 EMAIL="piyumiwickramaarachchi1@gmail.com"
@@ -39,7 +21,3 @@ if [ $? -eq 0 ];then
 else
    echo "Backup Failed"
    echo "Backup Failed" | mail -s "Amazon s3 Backup Status" $EMAIL
-
-####################################
-
-
