@@ -52,7 +52,7 @@ else
     echo "Failed to create database" | mail -s "DB Creation Failed" $EMAIL
 fi
 
-rm -rf /tmp/error1
+sudo rm -rf /tmp/error1
 
 ##Create Table##
 
@@ -73,7 +73,7 @@ else
     echo "Failed to create table" | mail -s "Table Creation Failed" $EMAIL
 fi
 
-rm -rf /tmp/error1
+sudo rm -rf /tmp/error1
 
 ##Data Insert##
 
@@ -95,3 +95,6 @@ else
     echo "Failed to insert data"
     echo "Failed to insert data" | mail -s "Failed to insert data" $EMAIL
 fi
+
+sudo rm -rf $serverstate
+sudo rm -rf $contentstate
