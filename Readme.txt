@@ -21,7 +21,7 @@ Use public IP address of admin server instead of "54.175.169.61"
 Use your own email instead of "piyumiwickramaarachchi1@gmail.com"
 
 Follow the below instructions, to run script2.sh daily.
-	#echo "./script2.sh" > /etc/cron.daily/script2
+	#echo "cd /tmp/;./s2.sh" > /etc/cron.daily/script2
 	#chmod +x /etc/cron.daily/script2
 
 Note: key.pem file is the downloaded key file when creating two EC2 instances. Both instances use this key file.
