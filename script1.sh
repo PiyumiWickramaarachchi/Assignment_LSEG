@@ -24,7 +24,7 @@ else
 fi
 
 ##Check the Content of web server##
-curl http://3.86.143.195 > /tmp/current
+curl http://$WEB_SERVER_IP > /tmp/current
 echo "Hello World" > /tmp/original
 
 if diff /tmp/current /tmp/original > /dev/null 2>&1
