@@ -21,3 +21,4 @@ if [ $? -eq 0 ];then
 else
    echo "Backup Failed"
    echo "Backup Failed" | mail -s "Amazon s3 Backup Status" $EMAIL
+fi
